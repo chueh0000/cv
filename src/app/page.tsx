@@ -8,11 +8,13 @@ import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
+import Favicon from "/public/favicon.ico"
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name}`,
 //   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
 //   description: RESUME_DATA.summary,
+  icons: [{ rel: 'icon', url: Favicon.src }],
 };
 
 export default function Page() {
