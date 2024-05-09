@@ -11,7 +11,7 @@ export const RESUME_DATA = {
     "Student at National Taiwan University majored in Computer Science and Information Engineering",
   summary:
     "",
-  avatarUrl: "",
+  avatarUrl: "https://drive.google.com/file/d/1HvL3xa-zVRw1trabBnRojHI_qp8TC89x/view?usp=sharing",
 //   personalWebsiteUrl: "",
   contact: {
     email: "b10902076@csie.ntu.edu.tw",
