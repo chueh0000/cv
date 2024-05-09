@@ -10,8 +10,9 @@ import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
-  description: RESUME_DATA.summary,
+  title: `${RESUME_DATA.name}`,
+//   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
+//   description: RESUME_DATA.summary,
 };
 
 export default function Page() {
