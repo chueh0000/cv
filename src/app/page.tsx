@@ -37,46 +37,59 @@ export default function Page() {
                 {RESUME_DATA.location}
               </a>
             </p> */}
-            <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
+            <div className="flex-col gap-y-1 pt-5 font-mono text-sm text-muted-foreground">
+            {/* <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden"> */}
               {RESUME_DATA.contact.email ? (
-                <Button
-                  className="size-8"
-                  variant="outline"
-                  size="icon"
-                  asChild
-                >
-                  <a href={`mailto:${RESUME_DATA.contact.email}`}>
-                    <MailIcon className="size-4" />
-                  </a>
-                </Button>
+                <div>
+                    <Button
+                        className="size-8"
+                        variant="outline"
+                        size="icon"
+                        asChild
+                        style={{ marginRight: '10px', marginBottom: '4px' }} // Add right and bottom margin to the Button
+                        >
+                        <a href={`mailto:${RESUME_DATA.contact.email}`}>
+                            <MailIcon className="size-4" />
+                        </a>
+                    </Button>
+                    <span>{RESUME_DATA.contact.email}</span>
+                </div>
               ) : null}
               {RESUME_DATA.contact.tel ? (
-                <Button
-                  className="size-8"
-                  variant="outline"
-                  size="icon"
-                  asChild
-                >
-                  <a href={`tel:${RESUME_DATA.contact.tel}`}>
-                    <PhoneIcon className="size-4" />
-                  </a>
-                </Button>
+                <div>
+                    <Button
+                        className="size-8"
+                        variant="outline"
+                        size="icon"
+                        asChild
+                        style={{ marginRight: '10px', marginBottom: '4px' }} // Add right and bottom margin to the Button
+                        >
+                        <a href={`tel:${RESUME_DATA.contact.tel}`}>
+                            <PhoneIcon className="size-4" />
+                        </a>
+                    </Button>
+                    <span>{RESUME_DATA.contact.tel}</span>
+                </div>
               ) : null}
-              {RESUME_DATA.contact.social.map((social) => (
-                <Button
-                  key={social.name}
-                  className="size-8"
-                  variant="outline"
-                  size="icon"
-                  asChild
-                >
-                  <a href={social.url}>
-                    <social.icon className="size-4" />
-                  </a>
-                </Button>
+              {RESUME_DATA.contact.social.map((social, index) => (
+                <div key={index}>
+                    <Button
+                        key={social.name}
+                        className="size-8"
+                        variant="outline"
+                        size="icon"
+                        asChild
+                        style={{ marginRight: '10px', marginBottom: '4px' }} // Add right and bottom margin to the Button
+                        >
+                        <a href={social.url}>
+                            <social.icon className="size-4" />
+                        </a>
+                    </Button>
+                    <span className="underline">{social.url}</span>
+                </div>
               ))}
             </div>
-            <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
+            {/* <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
               {RESUME_DATA.contact.email ? (
                 <a href={`mailto:${RESUME_DATA.contact.email}`}>
                   <span className="underline">{RESUME_DATA.contact.email}</span>
@@ -87,7 +100,7 @@ export default function Page() {
                   <span className="underline">{RESUME_DATA.contact.tel}</span>
                 </a>
               ) : null}
-            </div>
+            </div> */}
           </div>
 
           <Avatar className="size-28">
@@ -129,9 +142,13 @@ export default function Page() {
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                      <a className="hover:underline" href={work.link}>
-                        {work.company}
-                      </a>
+                      {work.link ? (
+                        <a className="hover:underline" href={work.link}>
+                            {work.company}
+                        </a>
+                      ) : (
+                        <span>{work.company}</span>
+                      )}
 
                       <span className="inline-flex gap-x-1">
                         {work.badges.map((badge) => (
