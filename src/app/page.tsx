@@ -9,12 +9,16 @@ import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 import Favicon from "/public/favicon.ico"
+import AppleIcon from "/public/apple-icon.png"
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name}`,
 //   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
 //   description: RESUME_DATA.summary,
-  icons: [{ rel: 'icon', url: Favicon.src }],
+  icons: [
+    { rel: 'icon', url: Favicon.src },
+    { rel: 'apple-touch-icon', url: AppleIcon.src },
+],
 };
 
 export default function Page() {
