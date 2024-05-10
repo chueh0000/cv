@@ -90,6 +90,8 @@ export const RESUME_DATA = {
   skills: [
     "C",
     "Python",
+    "Git",
+    "Unix",
   ],
   languages: [
     "多益英語檢定 915分",
