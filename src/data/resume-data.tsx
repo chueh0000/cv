@@ -28,10 +28,10 @@ export const RESUME_DATA = {
     {
       school: "國立臺灣大學",
     //   school: "National Taiwan University",
-      degree: "資訊工程學系",
+      degree: "資訊工程學系 三年級",
     //   degree: "Bachelor's Degree in Computer Science and Information Engineering",
       start: "2021",
-      end: "2025",
+      end: "迄今",
     },
     {
       school: "臺中市立臺中第一高級中等學校",
@@ -47,7 +47,7 @@ export const RESUME_DATA = {
       link: "https://www.facebook.com/NTUDSRA/",
       badges: [],
       title: "總務 → 社長",
-    //   logo: JojoMobileLogo,
+    //   logo: ,
       start: "2022",
       end: "2024",
       description:
@@ -58,7 +58,7 @@ export const RESUME_DATA = {
       link: "",
       badges: [],
       title: "委員（學生代表）",
-    //   logo: JojoMobileLogo,
+    //   logo: ,
       start: "2023",
       end: "2024",
       description:
@@ -69,7 +69,7 @@ export const RESUME_DATA = {
       link: "",
       badges: [],
       title: "委員（身心障礙學生代表）",
-    //   logo: JojoMobileLogo,
+    //   logo: ,
       start: "2022",
       end: "2024",
       description:
@@ -80,11 +80,11 @@ export const RESUME_DATA = {
       link: "https://www.instagram.com/ntu_cycling_club",
       badges: [],
       title: "庶務",
-    //   logo: JojoMobileLogo,
+    //   logo: ,
       start: "2022",
       end: "2023",
       description:
-        "管理及維護社團單車，將數十輛單車汰舊換新",
+        "管理及維護社團數十輛單車，並舉辦多日騎乘活動：「北進武嶺」、「蘇花公路」、「花東縱谷」",
     },
   ],
   skills: [
