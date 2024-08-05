@@ -39,18 +39,7 @@ export const RESUME_DATA = {
     },
   ],
   work: [
-    {
-        company: "臺大單車社",
-        link: "https://www.instagram.com/ntu_cycling_club",
-        badges: [],
-        title: "庶務",
-      //   logo: ,
-        start: "2022",
-        end: "2023",
-        description:
-          "管理及維護社團單車，並舉辦騎乘活動，帶領社員完成「北進武嶺」、「蘇花公路」、「花東縱谷」",
-    },
-    {
+      {
       company: "臺大身心障礙學生權益促進會",
       link: "https://www.facebook.com/NTUDSRA/",
       badges: [],
@@ -82,6 +71,17 @@ export const RESUME_DATA = {
       end: "2024",
       description:
         "審議學生申訴案件",
+    },
+    {
+        company: "臺大單車社",
+        link: "https://www.instagram.com/ntu_cycling_club",
+        badges: [],
+        title: "庶務",
+      //   logo: ,
+        start: "2022",
+        end: "2023",
+        description:
+          "管理及維護社團單車，並舉辦騎乘活動，帶領社員完成「北進武嶺」、「蘇花公路」、「花東縱谷」",
     },
   ],
   skills: [
