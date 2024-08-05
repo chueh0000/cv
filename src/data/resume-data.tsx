@@ -39,7 +39,18 @@ export const RESUME_DATA = {
     },
   ],
   work: [
-      {
+    {
+      company: "Microsoft Engage 微軟身心障礙大學生培養計劃",
+      link: "",
+      badges: [],
+      title: "",
+    //   logo: ,
+      start: "2024.07",
+      end: "2024.08",
+      description:
+        "從製作無障礙工具的想法出發，與組員合作開發即時語音摘要軟體，使用 OpenAI Whisper 進行語音轉文字，並透過 Google Gemini 進行摘要，最後使用 Streamlit 部署網頁",
+    },
+    {
       company: "臺大身心障礙學生權益促進會",
       link: "https://www.facebook.com/NTUDSRA/",
       badges: [],
@@ -48,18 +59,18 @@ export const RESUME_DATA = {
       start: "2022",
       end: "2024",
       description:
-        "提供身心障礙學生相互交流之平台，並舉辦障礙議題講座，提升大眾對障礙者的認知",
+        "提供身心障礙學生相互交流之平台，並舉辦障礙議題講座，提升大眾對障礙者的認知。也積極與校外夥伴合作，和臺師大身心障礙學生促進會，共同舉辦第一屆身心障礙青年人權培力營，並計劃成立台灣障礙青年協會，凝聚青年世代障礙者的聲音，促進交流和連結，期望形成具有共同身份認同的社群",
     },
     {
       company: "特殊教育推行委員會",
-      link: "",
+      link: "https://intriguing-product-094.notion.site/2629b4df7459473a8b3734fc3becd73b?v=3ce71c9085134bc8b424ce622d8526d3&pvs=4",
       badges: [],
       title: "委員（學生代表）",
     //   logo: ,
       start: "2023",
       end: "2024",
       description:
-        "代表身心障礙學生爭取學生權益，建構友善、無障礙的校園環境",
+        "代表身心障礙學生爭取學生權益，建構友善、無障礙的校園環境。並透過 Notion 網頁公開會議提案進度，保障資訊的開放性、可近性",
     },
     {
       company: "學生申訴評議委員會",
