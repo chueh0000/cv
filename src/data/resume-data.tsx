@@ -41,7 +41,7 @@ export const RESUME_DATA = {
   work: [
     {
       company: "Microsoft Engage 微軟身心障礙大學生培養計劃",
-      link: "",
+      link: "https://github.com/chueh0000/Realtime-Speech-Summary",
       badges: [],
       title: "",
     //   logo: ,
@@ -51,7 +51,7 @@ export const RESUME_DATA = {
         "從製作無障礙工具的想法出發，與組員合作開發即時語音摘要軟體，在不到一個月的時間內完成原型\n\
         使用 OpenAI Whisper 將語音轉成文字，透過 Google Gemini 摘要，最後使用 Streamlit 合併功能、設計出原型\n\
         採取模組化的設計，讓軟體容易維護和升級，摘要和語音轉文字的功能可以在未來更換成更好的模型\n\
-        程式碼公開在 GitHub，進行協作開發以及版本控制，計劃收集使用者回饋，根據回饋進行改進",
+        程式碼公開在 GitHub，進行協作開發以及版本控制",
     },
     {
       company: "臺大身心障礙學生權益促進會",
