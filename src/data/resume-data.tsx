@@ -107,6 +107,8 @@ export const RESUME_DATA = {
     "Python",
     "Git",
     "Unix",
+    "Verilog",
+    "CUDA C/C++",
   ],
   languages: [
     "多益英語檢定 915分",
