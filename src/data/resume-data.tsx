@@ -12,7 +12,7 @@ export const RESUME_DATA = {
   summary:
     "",
   avatarUrl: "https://drive.google.com/a/g.ntu.edu.tw/thumbnail?id=1VbKRC073t_dflOUn22imdybCLDtJYK3E",
-//   personalWebsiteUrl: "",
+  personalWebsiteUrl: "https://chueh-chung-hao-english.vercel.app/",
   contact: {
     email: "b10902076@csie.ntu.edu.tw",
     tel: "0971612015",
