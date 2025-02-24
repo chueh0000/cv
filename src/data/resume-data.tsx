@@ -11,7 +11,8 @@ export const RESUME_DATA = {
     "Student at National Taiwan University major in Computer Science and Information Engineering",
   summary:
     "",
-  avatarUrl: "https://drive.google.com/a/g.ntu.edu.tw/thumbnail?id=1VbKRC073t_dflOUn22imdybCLDtJYK3E",
+    // https://drive.google.com/file/d/1KvcMGTF50KMkqn4CTyNuwvzM5wPjde6p/view?usp=drive_link
+  avatarUrl: "https://drive.google.com/a/g.ntu.edu.tw/thumbnail?id=1KvcMGTF50KMkqn4CTyNuwvzM5wPjde6p",
   personalWebsiteUrl: "https://chueh-chung-hao-english.vercel.app/",
   contact: {
     email: "b10902076@csie.ntu.edu.tw",
@@ -37,12 +38,22 @@ export const RESUME_DATA = {
       degree: "資訊工程學系 四年級",
       start: "",
       end: "預計 2026 畢業",
+      description: "UNIX System Programming\n\
+                    Computer Architecture\n\
+                    Computer Networks\n\
+                    Parallel Programming\n\
+                    Digital Systems Design and Laboratory\n\
+                    Computer System Laboratory\n\
+                    Foundations of Artificial Intelligence\n\
+                    Introduction to Generative Artificial Intelligence\n\
+                    Introduction to Intelligent Vehicles",
     },
     {
       school: "臺中市立臺中第一高級中等學校",
       degree: "普通科",
       start: "2018",
       end: "2021",
+      description: "",
     },
   ],
   work: [
