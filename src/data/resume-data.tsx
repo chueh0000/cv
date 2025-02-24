@@ -1,6 +1,6 @@
 import {
 } from "@/images/logos";
-import { GitHubIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "闕中豪 Chueh Chung Hao",
@@ -15,21 +15,28 @@ export const RESUME_DATA = {
   personalWebsiteUrl: "https://chueh-chung-hao-english.vercel.app/",
   contact: {
     email: "b10902076@csie.ntu.edu.tw",
-    tel: "0971612015",
+    tel: "(+886)971612015",
     social: [
       {
         name: "GitHub",
+        text: "chueh0000",
         url: "https://github.com/chueh0000",
         icon: GitHubIcon,
       },
+      {
+        name: "LinkedIn",
+        text: "Chung Hao Chueh",
+        url: "https://www.linkedin.com/in/chung-hao-chueh-7b939031a",
+        icon: LinkedInIcon,
+      }
     ],
   },
   education: [
     {
       school: "國立臺灣大學",
       degree: "資訊工程學系 四年級",
-      start: "2021",
-      end: "迄今",
+      start: "",
+      end: "預計 2026 畢業",
     },
     {
       school: "臺中市立臺中第一高級中等學校",

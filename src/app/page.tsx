@@ -89,7 +89,7 @@ export default function Page() {
                             <social.icon className="size-4" />
                         </a>
                     </Button>
-                    <a className="underline" href={social.url}>{social.url}</a>
+                    <a className="" href={social.url}>{social.text}</a>
                 </div>
               ))}
             </div>
@@ -129,7 +129,7 @@ export default function Page() {
                       {education.school}
                     </h3>
                     <div className="text-sm tabular-nums text-gray-500">
-                      {education.start} - {education.end}
+                        {education.start ? (<div>{education.start} - {education.end}</div>) : (education.end)}
                     </div>
                   </div>
                 </CardHeader>
