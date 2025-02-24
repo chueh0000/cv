@@ -37,16 +37,16 @@ export const RESUME_DATA = {
       school: "國立臺灣大學",
       degree: "資訊工程學系 四年級",
       start: "",
-      end: "預計 2026 畢業",
-      description: "UNIX System Programming\n\
-                    Computer Architecture\n\
-                    Computer Networks\n\
-                    Parallel Programming\n\
-                    Digital Systems Design and Laboratory\n\
-                    Computer System Laboratory\n\
-                    Foundations of Artificial Intelligence\n\
-                    Introduction to Generative Artificial Intelligence\n\
-                    Introduction to Intelligent Vehicles",
+      end: "預計 2026.06 畢業",
+      description: "UNIX 系統程式設計\n\
+                    計算機結構\n\
+                    計算機網路\n\
+                    平行程式設計\n\
+                    數位系統與實驗\n\
+                    計算機系統實驗\n\
+                    人工智慧導論\n\
+                    生成式人工智慧導論\n\
+                    智慧型汽車導論",
     },
     {
       school: "臺中市立臺中第一高級中等學校",
