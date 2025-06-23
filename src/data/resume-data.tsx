@@ -1,5 +1,3 @@
-import {
-} from "@/images/logos";
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
@@ -12,8 +10,8 @@ export const RESUME_DATA = {
   summary:
     "",
     // https://drive.google.com/file/d/1KvcMGTF50KMkqn4CTyNuwvzM5wPjde6p/view?usp=drive_link
-  avatarUrl: "https://drive.google.com/a/g.ntu.edu.tw/thumbnail?id=1KvcMGTF50KMkqn4CTyNuwvzM5wPjde6p",
-//   avatarUrl: "",
+//   avatarUrl: "https://drive.google.com/a/g.ntu.edu.tw/thumbnail?id=1KvcMGTF50KMkqn4CTyNuwvzM5wPjde6p",
+  avatarUrl: "",
   personalWebsiteUrl: "https://chueh-chung-hao-english.vercel.app/",
   contact: {
     email: "b10902076@csie.ntu.edu.tw",

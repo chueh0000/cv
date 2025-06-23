@@ -1,4 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Image from "next/image";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CommandMenu } from "@/components/command-menu";
@@ -10,6 +11,7 @@ import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 import Favicon from "/public/favicon.ico"
 import AppleIcon from "/public/apple-icon.png"
+import { MyAvatarImage } from "@/images";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name}`,
@@ -107,10 +109,20 @@ export default function Page() {
             </div> */}
           </div>
 
-          <Avatar className="size-28">
-            <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
-            {/* <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback> */}
-          </Avatar>
+          {RESUME_DATA.avatarUrl ? 
+            <Avatar className="size-28">
+                <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
+                {/* <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback> */}
+            </Avatar>
+          : <Image
+              src={MyAvatarImage}
+              alt="My Avatar"
+              width={120}
+              height={167}
+              className="relative flex shrink-0 overflow-hidden rounded-xl"
+              // className="rounded shadow-lg mx-auto"
+            />
+          }
         </div>
         {/* <Section>
           <h2 className="text-xl font-bold">About</h2>
@@ -120,7 +132,7 @@ export default function Page() {
         </Section> */}
         {RESUME_DATA.jobObjectives.company ? 
             <Section>
-            <h2 className="text-xl font-bold">Job Objective</h2>
+            <h2 className="text-xl font-bold">應徵職位</h2>
             <CardContent className="">{RESUME_DATA.jobObjectives.company}</CardContent>
                 {RESUME_DATA.jobObjectives.positions ? 
                     <CardContent className="text-xs">
