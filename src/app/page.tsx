@@ -23,6 +23,35 @@ export const metadata: Metadata = {
 ],
 };
 
+type Education = {
+    school: string;
+    degree: string;
+    start?: string;
+    end: string;
+    description: string;
+}
+type GroupProject = {
+  title: string;
+  link?: string;
+  badges: readonly string[];
+  where: string;
+  start: string;
+  end: string;
+  description: string;
+  // logo?: string;
+};
+type Work = {
+  company: string;
+  link?: string;
+  badges: readonly string[];
+  title: string;
+  start: string;
+  end: string;
+  description: string;
+  // logo?: string;
+};
+
+
 export default function Page() {
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
@@ -148,7 +177,7 @@ export default function Page() {
 
         <Section>
           <h2 className="text-xl font-bold">學歷</h2>
-          {RESUME_DATA.education.map((education) => {
+          {RESUME_DATA.education.map((education: Education) => {
             return (
               <Card key={education.school}>
                 <CardHeader>
@@ -185,16 +214,67 @@ export default function Page() {
           </div>
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">語文能力</h2>
+          <h2 className="text-xl font-bold">證照</h2>
           <div className="flex flex-wrap gap-1">
-            {RESUME_DATA.languages.map((language) => {
-              return <Badge key={language}>{language}</Badge>;
+            {RESUME_DATA.certificates.map((certificate) => {
+              return <Badge key={certificate}>{certificate}</Badge>;
             })}
           </div>
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">經歷</h2>
-          {RESUME_DATA.work.map((work) => {
+          <h2 className="text-xl font-bold">團隊專案</h2>
+          {RESUME_DATA.groupProjects.map((groupProject: GroupProject) => {
+            return (
+              <Card key={groupProject.title}>
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                      {groupProject.link ? (
+                        <a className="underline" href={groupProject.link}>
+                            {groupProject.title} 🔗
+                        </a>
+                      ) : (
+                        <span>{groupProject.title}</span>
+                      )}
+
+                      <span className="inline-flex gap-x-1">
+                        {groupProject.badges.map((badge) => (
+                          <Badge
+                            variant="secondary"
+                            className="align-middle text-xs"
+                            key={badge}
+                          >
+                            {badge}
+                          </Badge>
+                        ))}
+                      </span>
+                    </h3>
+                    <div className="text-sm tabular-nums text-gray-500">
+                      {groupProject.start} - {groupProject.end ?? "Present"}
+                    </div>
+                  </div>
+
+                  {groupProject.where ? (
+                        <h4 className="font-mono text-sm leading-none">
+                            {groupProject.where}
+                        </h4>
+                    ) : null}
+                </CardHeader>
+                <CardContent className="mt-2 text-xs">
+                    {/* {groupProject.description} */}
+                    {groupProject.description.split('\n').map((line, index, array) => (
+                        <div key={index} style={{ marginBottom: index === array.length - 1 ? '10px' : '0' }}>
+                        <span>&bull; {line}</span>
+                        </div>
+                    ))}
+                </CardContent>
+              </Card>
+            );
+          })}
+        </Section>
+        <Section>
+          <h2 className="text-xl font-bold">社團經歷</h2>
+          {RESUME_DATA.work.map((work: Work) => {
             return (
               <Card key={work.company}>
                 <CardHeader>
@@ -202,7 +282,7 @@ export default function Page() {
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
                       {work.link ? (
                         <a className="underline" href={work.link}>
-                            {work.company}
+                            {work.company} 🔗
                         </a>
                       ) : (
                         <span>{work.company}</span>
